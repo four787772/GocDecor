@@ -1,2 +1,2 @@
 # GocDecore
-final project of Java Web School
+Final project of Java Web School
