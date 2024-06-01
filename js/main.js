@@ -245,7 +245,7 @@
   
  //book-a-table
  // Lấy tất cả các section trừ section "About"
-  var sections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact):not(#book-a-table)');
+  var sections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact):not(#book-a-table):not(#blog)');
 
   // Hiển thị nội dung của các section khác trừ section "About" khi trang web được tải lên
   for (var i = 0; i < sections.length; i++) {
@@ -257,6 +257,7 @@
   document.getElementById('why-us').style.display = 'none';
   document.getElementById('contact').style.display = 'none';
   document.getElementById('book-a-table').style.display = 'none';
+  document.getElementById('blog').style.display = 'none';
 
 var sectionLinks = document.querySelectorAll('#navbar a[href^="#"]');
 for (var i = 0; i < sectionLinks.length; i++) {
@@ -285,10 +286,20 @@ for (var i = 0; i < sectionLinks.length; i++) {
 		document.getElementById('book-a-table').style.display = 'none';
 
       } else if (targetSectionId === 'contact') {
-		document.getElementById(targetSectionId).style.display = 'block';
+		 document.getElementById(targetSectionId).style.display = 'block';
 		 document.getElementById('about').style.display = 'none';
 		 document.getElementById('why-us').style.display = 'none';
-        var otherSections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact):not(#book-a-table)');
+		 document.getElementById('book-a-table').style.display = 'none';
+        var otherSections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact)');
+        for (var k = 0; k < otherSections.length; k++) {
+          otherSections[k].style.display = 'none';
+        }
+		} else if (targetSectionId === 'blog') {
+		 document.getElementById(targetSectionId).style.display = 'block';
+		 document.getElementById('about').style.display = 'none';
+		 document.getElementById('why-us').style.display = 'none';
+		 document.getElementById('book-a-table').style.display = 'none';
+        var otherSections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact):not(#blog)');
         for (var k = 0; k < otherSections.length; k++) {
           otherSections[k].style.display = 'none';
         }
@@ -298,7 +309,25 @@ for (var i = 0; i < sectionLinks.length; i++) {
 		 document.getElementById('about').style.display = 'none';
 		 document.getElementById('why-us').style.display = 'none';
 		 document.getElementById('contact').style.display = 'none';
-        var otherSections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact):not(#book-a-table)');
+        var otherSections = document.querySelectorAll('section:not(#book-a-table)');
+        for (var k = 0; k < otherSections.length; k++) {
+          otherSections[k].style.display = 'none';
+        }
+		} 
+		else if (targetSectionId === 'menu') {
+		document.getElementById(targetSectionId).style.display = 'block';
+		 document.getElementById('about').style.display = 'none';
+		 document.getElementById('why-us').style.display = 'none';
+		 document.getElementById('contact').style.display = 'none';
+        var otherSections = document.querySelectorAll('section:not(#menu):not(#events):not(#contact):not(#book-a-table)');
+        for (var k = 0; k < otherSections.length; k++) {
+          otherSections[k].style.display = 'none';
+        }
+		} 
+		else if (targetSectionId === 'events') {
+		document.getElementById(targetSectionId).style.display = 'block';
+		 document.getElementById('menu').style.display = 'block';
+        var otherSections = document.querySelectorAll('section:not(#events):not(#menu) ');
         for (var k = 0; k < otherSections.length; k++) {
           otherSections[k].style.display = 'none';
         }
