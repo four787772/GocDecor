@@ -1902,7 +1902,7 @@ section {
 }
 
 .hero__categories__all {
-	background: #7fad39;
+	background: #1f1f24;
 	position: relative;
 	padding: 10px 25px 10px 40px;
 	cursor: pointer;
@@ -1929,6 +1929,8 @@ section {
 	font-size: 18px;
 	color: #ffffff;
 }
+
+
 
 .hero__categories ul {
 	border: 1px solid #ebebeb;
