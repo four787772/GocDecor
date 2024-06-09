@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Đèn trang trí decor</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/icon.png" rel="icon">
+  <link href="img/icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet">
+  <link href="css/aos.css" rel="stylesheet">
+  <link href="css/glightbox.min.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+   <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body style="background-image: url('img/thu1.jpg')">
+
+  <div class="container">
+        <div class="form-container sign-in active">
+            <form action="process_login.php" method="POST">
+                <h1>Đăng nhập</h1>
+                <span>Vui lòng nhập đầy đủ thông tin</span>
+				<div class="input-group">
+					<label for="txtEmail" class="input-group-text shadow-sm text-bg-primary border-primary">
+						<i class="fa-regular fa-envelope"></i>
+					</label>
+					<input type="email" class="form-control" id="txtEmail" placeholder="Email" name="email">
+					<div class="invalid-feedback">Nhập thông tin tài khoản</div>
+				</div>
+
+				<div class="input-group">
+					<label for="txtPass" class="input-group-text shadow-sm text-bg-primary border-primary">
+						<i class="fa-solid fa-key"></i> 
+					</label>
+					<input type="password" id="txtPass" placeholder="Password" name="password">
+					<div class="invalid-feedback">Nhập thông tin tài khoản</div>
+				</div>
+                <a href="#">Quên mật khẩu?</a>
+                <button type="submit" name="login">Đăng nhập</button>
+                <p>Nếu bạn chưa có tài khoản, hãy nhấn vào <a href="#" id="signup-link">Đăng ký</a> để đăng ký.</p>
+            </form>
+        </div>
+        <div class="form-container sign-up">
+            <form action="process_signup.php" method="POST">
+                <h1>Đăng ký tài khoản</h1>
+                <span>Vui lòng nhập đầy đủ thông tin</span>
+                <input type="email" placeholder="Email" name="email_signup">
+                <input type="text" placeholder="Username" name="username_signup">
+                <input type="password" placeholder="Password" name="password_signup">
+                <button type="submit" name="btn_signup" value="signup">Đăng ký</button>
+                <p>Nếu bạn đã có tài khoản, hãy nhấn vào <a href="#" id="signin-link">Đăng nhập</a> để đăng nhập.</p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+  <!-- Template Main JS File -->
+  <script src="js/login.js"></script>
+
+</body>
+
+</html>

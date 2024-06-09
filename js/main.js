@@ -19,6 +19,11 @@
     });
   }
 
+
+	
+
+	
+	
   /**
    * Sticky header on scroll
    */
@@ -294,12 +299,22 @@ for (var i = 0; i < sectionLinks.length; i++) {
         for (var k = 0; k < otherSections.length; k++) {
           otherSections[k].style.display = 'none';
         }
-		} else if (targetSectionId === 'blog') {
+		}  else if (targetSectionId === 'hero') {
+		 document.getElementById(targetSectionId).style.display = 'block';
+		 document.getElementById('menu').style.display = 'block';
+		 document.getElementById('events').style.display = 'block';
+		 document.getElementById('testimonials').style.display = 'block';
+        var otherSections = document.querySelectorAll('section:not(#hero):not(#menu):not(#events):not(#testimonials)');
+        for (var k = 0; k < otherSections.length; k++) {
+          otherSections[k].style.display = 'none';
+        }
+		}
+		else if (targetSectionId === 'blog') {
 		 document.getElementById(targetSectionId).style.display = 'block';
 		 document.getElementById('about').style.display = 'none';
 		 document.getElementById('why-us').style.display = 'none';
 		 document.getElementById('book-a-table').style.display = 'none';
-        var otherSections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact):not(#blog)');
+        var otherSections = document.querySelectorAll('section:not(#about):not(#why-us):not(#blog)');
         for (var k = 0; k < otherSections.length; k++) {
           otherSections[k].style.display = 'none';
         }
@@ -324,14 +339,7 @@ for (var i = 0; i < sectionLinks.length; i++) {
           otherSections[k].style.display = 'none';
         }
 		} 
-		else if (targetSectionId === 'events') {
-		document.getElementById(targetSectionId).style.display = 'block';
-		 document.getElementById('menu').style.display = 'block';
-        var otherSections = document.querySelectorAll('section:not(#events):not(#menu) ');
-        for (var k = 0; k < otherSections.length; k++) {
-          otherSections[k].style.display = 'none';
-        }
-		} 
+
 	  else {
         // Hiển thị nội dung của section mục tiêu và ẩn nội dung của section "About"
         var sections = document.querySelectorAll('section:not(#about):not(#contact):not(#book-a-table)');
@@ -384,4 +392,10 @@ for (var i = 0; i < sectionLinks.length; i++) {
       parentModal.style.display = "none";
     }
   });
+  
+  
+  
+  
+  
+
 })();
