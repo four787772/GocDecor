@@ -247,7 +247,7 @@
   
 
   
-  
+  /*
  //book-a-table
  // Lấy tất cả các section trừ section "About"
   var sections = document.querySelectorAll('section:not(#about):not(#why-us):not(#contact):not(#book-a-table):not(#blog)');
@@ -360,10 +360,10 @@ for (var i = 0; i < sectionLinks.length; i++) {
             sections[j].style.display = 'none';
           }
         }*/
-      }
+   /*   }
     }
   });
-}
+}*/
 
 	document.addEventListener('DOMContentLoaded', function() {
     var modals = document.getElementsByClassName('product-details');
@@ -399,3 +399,29 @@ for (var i = 0; i < sectionLinks.length; i++) {
   
 
 })();
+
+// tất cả trong sản phẩm
+document.addEventListener('DOMContentLoaded', function() {
+  const filterLinks = document.querySelectorAll('.nav-link[data-filter]');
+  const tabPanes = document.querySelectorAll('.tab-pane');
+
+  filterLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+          event.preventDefault();
+          const filter = this.getAttribute('data-filter');
+
+          // Remove 'active' and 'show' classes from all links and tab panes
+          filterLinks.forEach(l => l.classList.remove('active', 'show'));
+          tabPanes.forEach(pane => pane.classList.remove('active', 'show'));
+
+          // Add 'active' and 'show' classes to the clicked link and its corresponding tab pane(s)
+          this.classList.add('active', 'show');
+          if (filter === '*') {
+              tabPanes.forEach(pane => pane.classList.add('active', 'show'));
+          } else {
+              document.getElementById(filter).classList.add('active', 'show');
+          }
+      });
+  });
+});
+

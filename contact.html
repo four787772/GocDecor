@@ -43,30 +43,12 @@
 	  
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html#hero" class="home"><i class="fa-solid fa-house ihome"></i></a></li>
+          <li><a href="#hero" class="home"><i class="fa-solid fa-house ihome"></i></a></li>
           <li><a href="about.html">Giới Thiệu</a></li>
           <li><a href="products.html">Sản phẩm</a></li>
           <li><a href="dealhot.html">"Deal Hot"</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Liên Hệ</a></li>
-          
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
 		  <!--<input type="text" placeholder="Tìm kiếm ...">-->
 		  <div class="searchbar-container ml-auto">
 			  <input class="form-control" type="text" placeholder="Tìm kiếm ...">
@@ -75,11 +57,6 @@
 		  <li><a href="giohang.html" class="shop"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </nav><!-- .navbar -->
-
-     <!-- <a class="btn-book-a-table" href="#book-a-table"></a>-->
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i> 
-
     </div>
   </header><!-- End Header -->
 
@@ -88,7 +65,7 @@
     <div class="container">
       <div class="row">
         <!-- <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"> -->
-        <div class="order-2 order-lg-1 d-flex flex-column align-items-center">
+        <div class="d-flex flex-column align-items-center">
           <h2 data-aos="fade-up">Nâng tầm giá trị cho căn phòng của bạn</h2>
           <p data-aos="fade-up" data-aos-delay="100">Tỉ mỉ và tinh tế trong từng chi tiết, mẫu mã vô cùng đa dạng, phong phú về kiểu dáng, uy tín về chất lượng</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -97,73 +74,98 @@
               <i class="bi bi-play-circle"></i><span>Xem Video</span></a>
           </div>
         </div>
-        <!--<div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start" id="view">
-          <img src="img/anh1.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
-        </div>-->
       </div>
     </div>
     </div>
   </section><!-- End Hero Section -->
 
   <main id="main">
-
-
-
-        <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
+  
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
-		
+
         <div class="section-header">
-          <!-- <h2>Đặt mua sản phẩm</h2> -->
-          <p>Đặt mua sản phẩm</p>
+          <h2>Contact Us</h2>
+          <p>Liên hệ với chúng tôi</p>
         </div>
 
-        <div class="row g-0">
+        <div class="mb-3 col-lg-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.3949546702947!2d105.7269721748634!3d21.056882080599483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345456d4153617%3A0xc40efe204e622313!2zMTM0IFAuIE5o4buVbiwgWHXDom4gUGjGsMahbmcsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1713692520483!5m2!1sen!2s" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div><!-- End Google Maps -->
 
-          <div class="col-lg-4 reservation-img" style="background-image: url(img/bl01.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+        <div class="row gy-4">
 
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Tên khách hàng" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-				<div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Số điện thoại" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-				 <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="count" id="count" placeholder="Số lượng" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Địa chỉ</h3>
+                <p>Số 134 Nhổn, Nam Từ Liêm, Hà Nội</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Địa chỉ email</h3>
+                <p>contact@example.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Đường dây nóng: </h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Giờ mở cửa</h3>
+                <div><strong>T2 - T7:</strong> 9:00 - 23:00;
+                  <strong>Chủ nhật</strong> : Đóng cửa
                 </div>
               </div>
-			   <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="product" id="product" placeholder="Tên sản phẩm" data-rule="product" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-			  <div class="form-group mt-3">
-                  <input type="address" class="form-control" name="address" id="address" placeholder="Địa chỉ" data-rule="address" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Ghi chú"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Bạn đã đặt hàng thành công. Chúng tôi sẽ gọi lại cho bạn để xác nhận đơn hàng. Xin cảm ơn!</div>
-              </div>
-              <div class="text-center"><button type="submit">Đặt mua</button></div>
-            </form>
-          </div><!-- End Reservation Form -->
+            </div>
+          </div><!-- End Info Item -->
 
         </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Tên khách hàng" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="number" class="form-control" name="phone" id="phone" placeholder="Số điện thoại" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="Sản phẩm" id="subject" placeholder=" Tên sản phẩm" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Lời nhắn" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Lời nhắn của bạn đã được gửi. Xin cảm ơn!</div>
+          </div>
+          <div class="text-center"><button type="submit">Gửi</button></div>
+        </form><!--End Contact Form -->
 
       </div>
-    </section><!-- End Book A Table Section -->
-
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
