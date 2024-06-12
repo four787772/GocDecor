@@ -404,13 +404,12 @@ for (var i = 0; i < sectionLinks.length; i++) {
 document.addEventListener('DOMContentLoaded', function() {
   const filterLinks = document.querySelectorAll('.nav-link[data-filter]');
   const tabPanes = document.querySelectorAll('.tab-pane');
-
+  tabPanes.forEach(pane => pane.classList.add('active', 'show'));
   filterLinks.forEach(link => {
       link.addEventListener('click', function(event) {
           event.preventDefault();
           const filter = this.getAttribute('data-filter');
-
-          // Remove 'active' and 'show' classes from all links and tab panes
+            // Remove 'active' and 'show' classes from all links and tab panes
           filterLinks.forEach(l => l.classList.remove('active', 'show'));
           tabPanes.forEach(pane => pane.classList.remove('active', 'show'));
 
@@ -424,4 +423,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
 
